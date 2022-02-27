@@ -1,0 +1,11 @@
+Subject: HW:Lab3
+
+attach => archiver (zip)
+
+
+agile = гъвкав
+
+E-commerce:
+
+	waterfall  => get requirements => project specification => ready
+	agile  	   => scetch requirements => varaint1
