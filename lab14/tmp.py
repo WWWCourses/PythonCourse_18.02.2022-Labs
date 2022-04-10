@@ -1,6 +1,6 @@
-import math
+# import math
 
-print(dir(math))
-print(x)
+# print(dir(math))
+# print(x)
 
-print(math.ceil(2.5))
+# print(math.ceil(2.5))

@@ -31,8 +31,8 @@
 # t1 = (3,) # RIGHT
 # t2 = 1,    # RIGHT
 
-print(t1, type(t1), len(t1))
-print(t2, type(t2), len(t2))
+# print(t1, type(t1), len(t1))
+# print(t2, type(t2), len(t2))
 
 
 # ---------------------------- tupple operations: ---------------------------- #
