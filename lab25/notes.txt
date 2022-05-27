@@ -1,0 +1,4 @@
+https://matplotlib.org/matplotblog/posts/pyplot-vs-object-oriented-interface/
+
+https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py
+
