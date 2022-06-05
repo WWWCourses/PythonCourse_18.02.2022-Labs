@@ -1,0 +1,4 @@
+More on histograms (norm dist),
+titanic with sns.countplot
+
+Basic 3d shapes

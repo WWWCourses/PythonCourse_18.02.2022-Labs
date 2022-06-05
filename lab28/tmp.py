@@ -1,18 +1,32 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+# Fixing random state for reproducibility
+np.random.seed(19680801)
 
 
-mu, sigma = 170, 20 # mean and standard deviation
-x = np.random.normal(mu,sigma,100).astype('int')
-print(x.min(), x.max(), x)
+def randrange(n, vmin, vmax):
+    """
+    Helper function to make an array of random numbers having shape (n, )
+    with each number distributed Uniform(vmin, vmax).
+    """
+    return (vmax - vmin)*np.random.rand(n) + vmin
 
-fig,ax = plt.subplots(2,2)
-ax[0][0].hist(x)
-ax[1][0].hist(x,bins=20)
-ax[0][1].hist(x,bins=200)
-ax[1][1].bar(x,x)
+fig = plt.figure()
+ax = fig.add_subplot(projection='3d')
 
+n = 100
 
+# For each set of style and range settings, plot n random points in the box
+# defined by x in [23, 32], y in [0, 100], z in [zlow, zhigh].
+for m, zlow, zhigh in [('o', -50, -25), ('^', -30, -5)]:
+    xs = randrange(n, 23, 32)
+    ys = randrange(n, 0, 100)
+    zs = randrange(n, zlow, zhigh)
+    ax.scatter(xs, ys, zs, marker=m, cmap='Greys')
 
+ax.set_xlabel('X Label')
+ax.set_ylabel('Y Label')
+ax.set_zlabel('Z Label')
 
 plt.show()
