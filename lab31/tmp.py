@@ -34,7 +34,7 @@ tr1 = tr.Thread( target=sum_squares,  args=(start, int(end/2)))
 
 # start this on Thread2:
 # sum2 = sum_squares(int(end/2)+1,end)
-tr2 = tr.Thread( target=sum_squares, args=(start,int(end/2)) )
+tr2 = tr.Thread( target=sum_squares, args=(int(end/2)+1,end) )
 
 tr1.start()
 tr2.start()
