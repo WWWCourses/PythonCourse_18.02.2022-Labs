@@ -4,6 +4,10 @@
 
 import time
 import threading
+# import os
+
+cwd = os.getcwd()
+print(cwd)
 
 def write_to_file(filename, symbol, length):
 	with open(f'{filename}', "w") as ffw:
@@ -19,7 +23,7 @@ treads_pool=[]
 
 ## Sequential solution
 for k in range(5):
-	write_to_file(f'ffw{str(k)}.txt', 'z', len)
+	write_to_file(f'files/ffw{str(k)}.txt', 'z', len)
 
 ## Solution with treads:
 for k in range(5):
