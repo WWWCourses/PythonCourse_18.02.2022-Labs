@@ -1,6 +1,7 @@
-el = 1
-# l = list(el)*5
+l1 = [1,2,3]
+l2 = ['a', 'b', 'c']
 
+new_list = list(zip(l1,l2))
 
-
-print(l) # ['img1.jpg', .., 'img5.jpg]
+print(new_list)
+# [(1,'a'), (2,'b'), (3,'c')]

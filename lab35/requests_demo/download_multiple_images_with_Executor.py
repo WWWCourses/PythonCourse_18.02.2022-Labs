@@ -15,6 +15,7 @@ def download_image(url, file_name):
 			print(f"File saved to {file_name}")
 
 download_count = 5
+
 urls = ["https://picsum.photos/2400"] * download_count
 file_names = list()
 for i in range(1, download_count+1):
@@ -25,7 +26,7 @@ if __name__ == "__main__":
 
   with concurrent.futures.ThreadPoolExecutor() as executor:
 	# TODO: make it work
-    executor.map(download_image, (urls,file_names))
+    executor.map(download_image, list(zip((urls,file_names))))
     executor.shutdown(wait=True)
 
   end = time.perf_counter()
