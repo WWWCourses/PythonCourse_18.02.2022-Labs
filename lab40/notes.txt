@@ -1,0 +1,46 @@
+SQL > MySQL
+
+
+USER_INFO:
+
+	Name |  Age | Town | Zip Code |
+	Pesho|   34 | Sofia| 1508
+	Maria|     0| Sofia| 1508
+
+
+
+USERS:
+{
+	'name':'Pesho',
+	'age': 34,
+	'town': 'Sofia,
+	'zip': 1508
+},
+{
+	'name':'Maria',
+	'comments':'skldskldsldsklds'
+}
+
+
+
+JSON: JavaScript Object Notation
+
+
+DBA = Data Base Administrator
+
+
+Atlas Cloud: ivawebcourses+1@ggmail.com/12345678abv!!!
+			: python_courses_test/12345678abv
+
+
+TASK : create database: python_course_db
+Collection: Todos
+
+{
+	'title': 'Walk the dog',
+	'completed':false
+}
+
+
+mongodb+srv://python_courses_test:12345678abv@ac-meejouz-shard-00-01.6oisd7l.mongodb.net/test
+
