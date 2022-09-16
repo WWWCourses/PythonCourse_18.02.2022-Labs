@@ -1,0 +1,4 @@
+mongodb://localhost:27017/python_course
+
+
+mongosh "mongodb+srv://cluster0.6oisd7l.mongodb.net/myFirstDatabase" --apiVersion 1 --username python_courses_test
