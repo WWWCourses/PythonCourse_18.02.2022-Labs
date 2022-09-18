@@ -1,0 +1,8 @@
+1. Create database 'test'
+2. Create table 'artist':
+	CREATE TABLE artist (
+		artist_id SMALLINT(5) NOT NULL DEFAULT 0,
+		fname VARCHAR(20) DEFAULT NULL,
+		lname VARCHAR(20) NOT NULL,
+		PRIMARY KEY  (artist_id)
+);
