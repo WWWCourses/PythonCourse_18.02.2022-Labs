@@ -1,0 +1,14 @@
+QPushButton{
+	background-color: red;
+	color:white;
+	font-size:20px;
+}
+QLabel{
+	color:aqua;
+	font-size: 30px;
+}
+
+/* --------------------------- TODO: why not work --------------------------- */
+.QWidget{
+	background-color:white;
+}
