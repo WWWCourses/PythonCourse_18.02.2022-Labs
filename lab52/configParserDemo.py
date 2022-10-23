@@ -1,14 +1,21 @@
 import mysql.connector
 
+from configparser import ConfigParser
+
 class DB:
-	def __init__(self, user, password, db, host="localhost", port=3306):
+	def __init__(self):
+		db_config = self.read_db_config()
+		print(db_config)
+		exit()
+
 		try:
 			self.cnx = mysql.connector.connect(
-				user=user,
-				password=password,
-				db=db,
-				host=host,
-				port=port
+				user=db_config['user'],
+				password=db_config['password'],
+				db=db_config['db'],
+				host=db_config['host'],
+				port=db_config['port']
+
 			)
 
 		except mysql.connector.Error as e:
@@ -39,29 +46,35 @@ class DB:
 		else:
 			return False
 
+	def read_db_config(file_name='config.ini', section='mysql'):
+		# create parser and read the configuration file
+		parser = ConfigParser()
+		parser.read(file_name)
+
+
+		db_config = {}
+		if parser.has_section(section):
+			items = parser.items(section)
+			for item in items:
+				db_config[item[0]] = item[1]
+		else:
+			raise Exception(f'{section} not found in the {filename} file')
+
+		return db_config
 
 
 if __name__ == '__main__':
-	db = DB('test', 'test1234','pyqtDemos')
+	db = DB()
 
 	# let's use some hard-coded values for test:
 	user_name = 'Maria'
 	password = 'maria123'
 
-	db.authenticate(user_name=user_name, password=password)
+	auth = db.authenticate(user_name=user_name, password=password)
 
 	if auth:
 		print('Loged in')
 	else:
 		print('Problem')
-
-
-
-
-user=db_config['user'],
-password=db_config['password'],
-db=db_config['db'],
-host=db_config['host'],
-port=db_config['port']
 
 
