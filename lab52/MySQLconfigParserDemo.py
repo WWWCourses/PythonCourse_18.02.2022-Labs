@@ -5,14 +5,12 @@ from configparser import ConfigParser
 class DB:
 	def __init__(self):
 		db_config = self.read_db_config()
-		print(db_config)
-		exit()
 
 		try:
 			self.cnx = mysql.connector.connect(
 				user=db_config['user'],
 				password=db_config['password'],
-				db=db_config['db'],
+				db=db_config['database'],
 				host=db_config['host'],
 				port=db_config['port']
 
@@ -23,6 +21,16 @@ class DB:
 
 		print('*** Connection Established ***')
 
+	def insertRow(self, *args):
+		# Creating a query for later execution using .prepare()
+		cursor = self.cnx.cursor(prepared=True)
+		prepared_sql ="""
+			INSERT INTO users (username,email,password)
+			VALUES (?,?,?)
+			"""
+		cursor.execute(prepared_sql, args)
+
+		self.cnx.commit()
 
 	def authenticate(self, user_name, password):
 		# create a cursor for the connection
@@ -46,7 +54,8 @@ class DB:
 		else:
 			return False
 
-	def read_db_config(file_name='config.ini', section='mysql'):
+	def read_db_config(self,file_name='config.ini', section='mysql'):
+
 		# create parser and read the configuration file
 		parser = ConfigParser()
 		parser.read(file_name)
@@ -66,15 +75,17 @@ class DB:
 if __name__ == '__main__':
 	db = DB()
 
-	# let's use some hard-coded values for test:
-	user_name = 'Maria'
-	password = 'maria123'
+	db.insertRow('Asen', 'asen@abv.com', 'asen123')
 
-	auth = db.authenticate(user_name=user_name, password=password)
+	# # let's use some hard-coded values for test:
+	# user_name = 'Maria'
+	# password = 'maria123'
 
-	if auth:
-		print('Loged in')
-	else:
-		print('Problem')
+	# auth = db.authenticate(user_name=user_name, password=password)
+
+	# if auth:
+	# 	print('Loged in')
+	# else:
+	# 	print('Problem')
 
 
