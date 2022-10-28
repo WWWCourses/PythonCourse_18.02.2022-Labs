@@ -15,9 +15,11 @@ class Table(qtw.QTableWidget):
 		for row_idx,row in enumerate(data):
 			for col_idx,el in enumerate(row):
 				# TODO: why not works
-				print(data[row_idx][col_idx])
+				print(type(data[row_idx][col_idx]))
 
-				self.setItem(row_idx, col_idx, qtw.QTableWidgetItem(data[row_idx][col_idx]))
+				item = str(data[row_idx][col_idx])
+
+				self.setItem(row_idx, col_idx, qtw.QTableWidgetItem(item))
 
 		self.setColumnCount(len(data[0]))
 		self.setRowCount(len(data))
