@@ -1,0 +1,56 @@
+Page Refresh:
+	F5 => refresh
+	CTRL+F5 => refresh with cache
+
+
+# ------------------------------------ URL ----------------------------------- #
+
+file:///media/nemsys/data/projects/courses/netIT/PythonCourseNetIT/PythonCourse_18.02.2022-Labs/lab55/mysite.com/front-end/index.html
+
+http://127.0.0.1:8080/front-end/index.html
+
+
+chrome://settings/
+
+file:///media/nemsys/data/projects/courses/netIT/PythonCourseNetIT/PythonCourse_18.02.2022-Labs/lab55/mysite.com/front-end/index.html?userName=&password=
+
+https://wwwcourses.github.io/PythonCourseNetIT-Slides/pages/themes/NetworkProgramming-Lecture2/NetworkProgramming-Lecture2.html
+
+https://www.abv.bg
+
+http://127.0.0.1:9999/front-end/index.html
+http://127.0.0.1:9999/front-end/
+
+
+http://127.0.0.1:9999/images/2022/femaile/HTTP_ClientServerSystem.png
+
+http://127.0.0.1:9999/fashion/HTTP_ClientServerSystem.png?
+
+
+
+http =>
+https
+
+wwwcourses.github.io => DNS => 23.567.231.234
+
+192.168.0.1 (private IP) => ISP Router => 23.567.231.234 (public IP)
+127.0.0.1
+
+https://www.google.com/search?q=html8&source=hp&ei=NVdlY5jRNbOTxc8P3_KBgAM&iflsig=AJiK0e8AAAAAY2VlRVKCVGipjAueEipCopIlhtRe25Q1&ved=0ahUKEwjYv-evkZX7AhWzSfEDHV95ADAQ4dUDCAg&uact=5&oq=html8&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAeEAoyCAgAEB4QDxAKOgsILhCABBDHARDRAzoFCC4QgAQ6CAguEIAEENQCOg4ILhCABBDHARDRAxDUAlDbF1jXKGDFP2gCcAB4AIABvAGIAcMGkgEDMC41mAEAoAEBsAEA&sclient=gws-wiz
+
+
+https://www.abv.bg/
+https://www.abv.bg/index.php
+
+Apache=>
+	'/' => 'index.php'
+	'/users' => 'a/b/users.html'
+
+
+
+
+
+http://127.0.0.1:9999/front-end/
+
+Request Message:
+GET front-end/ HTTP1.1

@@ -1,0 +1,12 @@
+### Resources:
+https://fastapi.tiangolo.com/tutorial/
+
+### Create project and virtenv:
+mkdir fastapi_simple_demo
+cd fastapi_simple_demo
+python3 -m venv ./.venv
+
+# activate virtualenv:
+
+### install fastapi
+pip install "fastapi[all]"
