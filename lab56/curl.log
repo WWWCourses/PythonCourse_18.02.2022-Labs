@@ -1,0 +1,83 @@
+== Info:   Trying 127.0.0.1:8080...
+== Info: TCP_NODELAY set
+== Info: Connected to 127.0.0.1 (127.0.0.1) port 8080 (#0)
+=> Send header, 98 bytes (0x62)
+0000: GET /front-end/index.html HTTP/1.1
+0024: Host: 127.0.0.1:8080
+003a: User-Agent: curl/7.68.0
+0053: Accept: */*
+0060: 
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 22 bytes (0x16)
+0000: Accept-Ranges: bytes
+<= Recv header, 34 bytes (0x22)
+0000: Cache-Control: public, max-age=0
+<= Recv header, 46 bytes (0x2e)
+0000: Last-Modified: Sun, 06 Nov 2022 17:00:52 GMT
+<= Recv header, 27 bytes (0x1b)
+0000: ETag: W/"286-1844de34d0a"
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1858
+<= Recv header, 37 bytes (0x25)
+0000: Date: Sun, 06 Nov 2022 17:41:32 GMT
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 23 bytes (0x17)
+0000: Keep-Alive: timeout=5
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 631 bytes (0x277)
+0000: <!DOCTYPE html>.<html lang="en">.<head>..<meta charset="UTF-8">.
+0040: .<meta http-equiv="X-UA-Compatible" content="IE=edge">..<meta na
+0080: me="viewport" content="width=device-width, initial-scale=1.0">..
+00c0: <title>Document</title>..<link rel="stylesheet" href="./main.css
+0100: ">.</head>.<body>..<h1>Welcome to my site</h1>..<h2>Please, log 
+0140: in</h2>..<form action="" method="POST">...<label>user name: <inp
+0180: ut type="text" name="userName"></label>...<label>password: <inpu
+01c0: t type="password" name="password"></label>...<button>Log in</but
+0200: ton>..</form>..<img src="./images/2022/femaile/HTTP_ClientServer
+0240: System.png" alt="">..<script src="./main.js"></script>.
+<= Recv data, 1227 bytes (0x4cb)
+0000: <!-- Code injected by live-server -->
+0027: <script type="text/javascript">
+0048: .// <![CDATA[  <-- For SVG support
+006c: .if ('WebSocket' in window) {
+008b: ..(function() {
+009c: ...function refreshCSS() {
+00b8: ....var sheets = [].slice.call(document.getElementsByTagName("li
+00f8: nk"));
+0100: ....var head = document.getElementsByTagName("head")[0];
+013a: ....for (var i = 0; i < sheets.length; ++i) {
+0169: .....var elem = sheets[i];
+0185: .....head.removeChild(elem);
+01a3: .....var rel = elem.rel;
+01bd: .....if (elem.href && typeof rel != "string" || rel.length == 0 
+01fd: || rel.toLowerCase() == "stylesheet") {
+0226: ......var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, ''
+0266: );
+026a: ......elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_
+02aa: cacheOverride=' + (new Date().valueOf());
+02d5: .....}
+02dd: .....head.appendChild(elem);
+02fb: ....}
+0302: ...}
+0308: ...var protocol = window.location.protocol === 'http:' ? 'ws://'
+0348:  : 'wss://';
+0356: ...var address = protocol + window.location.host + window.locati
+0396: on.pathname + '/ws';
+03ac: ...var socket = new WebSocket(address);
+03d5: ...socket.onmessage = function(msg) {
+03fc: ....if (msg.data == 'reload') window.location.reload();
+0435: ....else if (msg.data == 'refreshcss') refreshCSS();
+046b: ...};
+0472: ...console.log('Live reload enabled.');
+049b: ..})();
+04a4: .}
+04a8: .// ]]>
+04b1: </script>
+04bc: </body>.</html>
+== Info: Connection #0 to host 127.0.0.1 left intact
