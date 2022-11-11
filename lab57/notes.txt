@@ -1,0 +1,11 @@
+http://somesite.com:80
+https://somesite.com:443
+
+
+
+http://127.0.0.1:8080/  => GET / HTTP1.1
+http://localhost:8080/  => GET / HTTP1.1
+
+http://127.0.0.1:8080/login  => GET /login HTTP1.1
+
+http://127.0.0.1:8080/login?q=HTTP2&username=Ada
