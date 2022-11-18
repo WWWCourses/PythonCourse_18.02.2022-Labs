@@ -1,0 +1,4 @@
+IP address: 165.232.5.90
+Domain Name Service: mysite.com =>1 65.232.5.90
+
+Hosting: 15GB 2eu/month,

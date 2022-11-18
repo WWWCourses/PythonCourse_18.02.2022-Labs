@@ -1,0 +1,4 @@
+Sitemap: https://www.imot.bg/sitemap/index.xml
+
+User-agent: *
+Disallow:
