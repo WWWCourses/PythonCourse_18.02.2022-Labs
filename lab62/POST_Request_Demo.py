@@ -30,7 +30,9 @@ def send_request(model):
 		"nup":"01"
 	}
 	headers = {
-		"user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+		"user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36",
+		"content-length":"188",
+		"content-type": "application/x-www-form-urlencoded"
 	}
 
 	r = requests.post(url, data=data, headers=headers)
