@@ -5,3 +5,5 @@
 
 
 ![imdb_pic]("./images/imdb_pic.jpg")
+
+<img src="./images/imdb_pic.jpg">
