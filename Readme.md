@@ -1,7 +1,11 @@
 # My Project Description
 
-1. Item 1
-2. Item 2
+##  Install
+
+	1. Create venv
+	2. pip install -r requirements.txt
+	3. Change config.ini
+
 
 
 ![imdb_pic]("./images/imdb_pic.jpg")
